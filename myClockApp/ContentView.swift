@@ -9,15 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //        Text("Hello, !")
-        //            .frame(maxWidth: .infinity, maxHeight: .infinity)
         let clockSize: CGFloat = 90
-        //        WindowSettings()
         ZStack{
             PomodoroView(clockSize: clockSize, workTime: 15, restTime: 1)
             ClockView(clockSize: clockSize)
-//            ClockDial(clockSize: clockSize)
-//            ClockHandsView(clockSize: clockSize)
         }
         .shadow(radius: 5)
         .padding(10)

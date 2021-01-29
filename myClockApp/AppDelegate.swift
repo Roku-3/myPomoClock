@@ -55,9 +55,9 @@ extension NSWindow {
     let window = NSPanel(contentRect: rect, styleMask: styleMask, backing: .buffered, defer: true)
     window.collectionBehavior = [.stationary, .ignoresCycle, .canJoinAllSpaces, .fullScreenAuxiliary]
     window.makeKeyAndOrderFront(nil)
-//    window.ignoresMouseEvents = true
     window.isMovableByWindowBackground = true
-//    window.isMovable = true
+//    window.ignoresMouseEvents = true
+    window.isMovable = true
     window.titleVisibility = .hidden
     window.setFrameAutosaveName("everclock")
     window.level = .floating
@@ -70,5 +70,3 @@ extension NSWindow {
 //        return window
 //    }
 }
-
-
